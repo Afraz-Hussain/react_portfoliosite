@@ -1,0 +1,84 @@
+.portfoliosec{
+    height: 100vh;
+    margin-top: -70px;
+}
+.box1{
+   
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+   
+    .skills{
+        ul{
+            display: flex;
+            gap: 10px;
+           
+        }
+        li{
+         font-weight: 700;
+            padding: 10px;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        & .active{
+            background-color: rgb(19, 19, 19);
+            color: white;
+            padding: 10px;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        
+    }
+    
+    
+}
+.box2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  
+    .portfolioimgs {
+      position: relative;
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  
+      
+      &:hover {
+        background-color: rgb(19, 19, 19);
+        cursor: pointer;
+  
+        img {
+          opacity: 0.2;
+          z-index: 0;
+        }
+  
+        h3 {
+          opacity: 1; 
+          z-index: 2;
+        }
+      }
+  
+       img {
+        width: 430px;
+        height: 260px;
+        padding: 10px;
+        z-index: 1;
+        transition: opacity 0.3s ease; 
+      }
+  
+       h3 {
+        position: absolute;
+        color: white;
+        opacity: 0; 
+        z-index: 0;
+        transition: opacity 0.3s ease; 
+      }
+    }
+}
+
+
+
+  

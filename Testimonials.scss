@@ -1,0 +1,33 @@
+.testibox{
+
+    height: 100vh;
+    background-color: white;
+    
+}
+.textimainbox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background-color: rgb(20, 20, 20);
+
+    color: white;
+
+    .boxes{
+        border: 2px solid pink;
+        background-color: rgba(92, 92, 92, 0.411);
+        gap: 10px;
+        margin: 20px;
+        width: 350px;
+        padding: 20px;
+        height:300px;
+        overflow: hidden;
+        padding-bottom: 10px;
+        border-radius: 7px;
+    }
+    .testimg{
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+    }
+}
